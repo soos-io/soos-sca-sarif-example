@@ -23,7 +23,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: SOOS SCA Analysis
-        uses: soos-io/soos-sca-github-action@v1.0.1-beta
+        uses: soos-io/soos-sca-github-action@v1.0.3-beta
         with:
           project_name: "soos-io/soos-sca-sarif-example"
           on_failure: "continue_on_failure"
@@ -34,3 +34,4 @@ jobs:
           # Visit https://soos.io to get the required tokens to leverage SOOS scanning/analysis services
           SOOS_CLIENT_ID: ${{ secrets.SOOS_CLIENT_ID }}
           SOOS_API_KEY: ${{ secrets.SOOS_API_KEY }}
+          SOOS_DEBUG_PRINT_VARIABLES: "true"
