@@ -26,6 +26,7 @@ jobs:
         uses: soos-io/soos-sca-github-action@v1.0.1-beta
         with:
           project_name: "soos-io/soos-sca-sarif-example"
+          on_failure: "continue_on_failure"
           sarif: "true"
           gpat: ${{ secrets.SOOS_GITHUB_PAT }}
           base_uri: "https://dev-api.soos.io/api/"
