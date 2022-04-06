@@ -30,6 +30,7 @@ jobs:
           sarif: "true"
           gpat: ${{ secrets.SOOS_GITHUB_PAT }}
           base_uri: "https://dev-api.soos.io/api/"
+          debug_print_variables: "true"
         env:
           # Visit https://soos.io to get the required tokens to leverage SOOS scanning/analysis services
           SOOS_CLIENT_ID: ${{ secrets.SOOS_CLIENT_ID }}
