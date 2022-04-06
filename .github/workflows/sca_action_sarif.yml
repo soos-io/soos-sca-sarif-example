@@ -23,7 +23,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: SOOS SCA Analysis
-        uses: soos-io/soos-sca-github-action@v1.0.0-beta
+        uses: soos-io/soos-sca-github-action@v1.0.1-beta
         with:
           project_name: "soos-io/soos-sca-sarif-example"
           sarif: "true"
